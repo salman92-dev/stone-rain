@@ -6,31 +6,33 @@ import Image from "next/image";
 
 export default function JoinCommunity() {
   return (
-    <section className="w-full 2xl:container mx-auto px-10 md:px-36 py-20 pt-0 md:pt-40 overflow-hidden">
+    <section className="w-full 2xl:container mx-auto px-10 md:px-36 py-20 pt-0 md:pt-40">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="max-sm:pb-120 bg-white rounded-3xl w-full p-10 flex items-center gap-16 shadow-[21px_36px_10px_0px_#00000040] pb-30 relative"
+        className="max-sm:pb-120 bg-white rounded-3xl w-full px-6 py-12 md:p-10 flex items-center gap-16 shadow-[21px_36px_10px_0px_#00000040] md:pb-30 relative"
       >
-        {/* FLOATING IMAGE */}
         <motion.div
-          animate={{ y: [0, -10, 0] }}
-          transition={{
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-          className="absolute bottom-0 w-[165%] md:w-[70%] left-[-35%] md:left-[-6vw]"
-        >
-          <Image
-            src="/images/join-img.png"
-            alt="btn"
-            width={600}
-            height={600}
-            className="w-full"
-          />
-        </motion.div>
+            animate={{
+                scale: [1, 1.03, 1],
+            }}
+            transition={{
+                duration: 5,
+                repeat: Infinity,
+                ease: "easeInOut",
+            }}
+            className="absolute bottom-0 w-[165%] md:w-[70%] left-[-35%] md:left-[-6vw]"
+>
+  <Image
+    src="/images/join-img.png"
+    alt="btn"
+    width={600}
+    height={600}
+    className="w-full"
+  />
+</motion.div>
+
 
         {/* RIGHT TEXT */}
         <div className="flex-1 text-right text-black">

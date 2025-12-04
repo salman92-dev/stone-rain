@@ -161,8 +161,8 @@ export default function Navbar() {
                 className="flex justify-center gap-3 mt-3"
               >
                 {[
-                  { icon: <FaTelegramPlane size={20} />, link: "#" },
-                  { icon: <FaTwitter size={20} />, link: "#" },
+                  { icon: "/images/tg.png", link: "#" },
+                  { icon: "/images/x.png", link: "#" },
                 ].map((social, i) => (
                   <motion.a
                     key={i}
@@ -172,7 +172,7 @@ export default function Navbar() {
                     transition={{ type: "spring", stiffness: 300 }}
                     className="w-10 h-10 rounded-md bg-[#c6a9ff] flex items-center justify-center text-black"
                   >
-                    {social.icon}
+                    <Image src={social.icon} alt="social" width={80} height={80} className="w-40"/>
                   </motion.a>
                 ))}
               </motion.div>

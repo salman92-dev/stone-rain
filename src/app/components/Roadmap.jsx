@@ -86,7 +86,7 @@ export default function Roadmap() {
   };
 
   return (
-    <div className="roadmap relative py-50 md:py-20 2xl:container mx-auto px-6 md:px-36 ">
+    <div className="roadmap relative max-sm:pb-50 py-50 md:py-20 2xl:container mx-auto px-8 md:px-36 ">
          {/* Character Image */}
       <motion.div
         initial={{ scale: 0, rotate: -180, opacity: 0 }}
@@ -178,7 +178,7 @@ export default function Roadmap() {
                 className="relative"
               >
                 <motion.div
-                  className={`max-sm:pt-20 p-12 shadow-2xl h-full border-2 rounded-t-[120px] border-[#000] ${
+                  className={`max-sm:pt-20 p-8 md:p-12 shadow-2xl h-full border-2 rounded-t-[120px] border-[#000] ${
                     isCenter 
                       ? 'max-sm:mt-0 mt-[-3vw] bg-white border-12 border-[#CF8EFF] outline-2 outline-[#000]' 
                       : 'bg-[#7939A8]'

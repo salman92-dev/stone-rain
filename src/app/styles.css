@@ -2,6 +2,9 @@
     font-family: mama;
     src: url(/fonts/MamaBear.otf);
 }
+body {
+    background: #370D57;
+}
 @font-face {
     font-family: coconut;
     src: url(/fonts/coconutz/coconutz.otf);
@@ -42,7 +45,7 @@
 @media (max-width:600px) {
     .roadmap {
     background: url(/images/road-bg.png) no-repeat center;
-    background-size: 200% 100%;
+    background-size: 350% 100%;
 }
 .header {
     background: url(/images/header-bg-mobile.png);
